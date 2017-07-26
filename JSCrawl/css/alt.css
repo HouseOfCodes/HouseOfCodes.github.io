@@ -1,0 +1,19 @@
+* {
+    /* border: 1px solid black; */
+    font-family: "Courier New", sans-serif;
+    text-align: center;
+	font-family: 'Kalam', cursive;
+}
+
+/* // fonts
+font-family: 'Architects Daughter', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Coming Soon', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Nothing You Could Do', cursive; */
+
+#bg {
+    background-image: url("../images/paper.jpg");
+	background-size: cover;
+}

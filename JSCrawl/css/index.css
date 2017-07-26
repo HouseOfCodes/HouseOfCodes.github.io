@@ -1,0 +1,175 @@
+* {
+    /* border: 1px solid black; */
+    font-family: "Courier New", sans-serif;
+    text-align: center;
+}
+
+#upperPanel li {
+	list-style-type: none;
+	margin: 0px 80px;
+	display: inline-block;
+}
+
+#title {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.diceImage {
+	width: 60px;
+	height: 60px;
+	margin: 0px 20px;
+	
+}
+
+#gameControls {
+	border: 1px solid black;
+	height: 90%;
+	width: 12%;
+	background-color: white;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	
+}
+
+#gameControls ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#gameControls li {
+	list-style-type: none;
+}
+
+#gameControls button {
+	position: relative;
+	margin: 10px 0px;
+	top: 5px;
+	left: 0px;
+}
+
+#equipControls {
+	text-align: left;
+	position: absolute;
+	top: 2%;
+	right: 4%;
+	
+}
+
+#view, #left, #right {
+	border: 1px solid black;
+}
+
+#view {
+	margin: 2%;
+	margin-left: 28%;
+	width: 67%;
+	display: inline-block
+	float: right;
+}
+
+#status {
+	text-align: center;
+	border: 2px solid black;
+	width: 90%;
+	height: 150px;
+	position: relative;
+    left: 5%;
+    background-color: LightGray;
+}
+
+#left, #right {
+	width: 200px;
+	height: 200px;
+    margin: 0% 5%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+
+
+#leftMessage, #rightMessage {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+#leftImage, #rightImage {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 35%;
+	left: 35%;
+}
+
+#controls {
+	border: 2px solid black;
+	margin: 2%;
+	margin-left: 5%;
+	width: 20%;
+	height: 485px;
+	background-color: LightGray;
+	float: left;
+}
+
+#controls ul {
+    margin-top: 10px;
+	background-color: white;
+}
+
+#controls li {
+	margin: 3% 0%;
+	list-style-type: none;
+}
+
+
+#worldButtons, #combatButtons, #talkButtons {
+	border: 1px solid black;
+	padding: 0px;
+	margin: 1% 2%;
+}
+
+#logWindow {
+	text-align: left;
+	position: absolute;
+	right: 7%;
+	border: 2px solid black;
+	width: 100%;
+	height: 98%;
+	float: right;
+}
+
+#bottomPanel {
+	position: relative;
+	display: inline-block;
+	
+	width: 67%;
+	height: 200px;
+	float: right;
+} 
+
+#footer {
+	width: 90%; 
+	font-size: 10px;
+	position: relative;
+	height: 200px;
+	display: inline-block;
+}
+
+#neat {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	white-space: pre;
+}
+
+#stamp {
+	position: absolute;
+    bottom: 0px;
+	left: 5px;
+}

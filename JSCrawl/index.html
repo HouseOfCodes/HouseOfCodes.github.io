@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crawl.JS - A short web project</title>
+	<link id="csss" rel="stylesheet" type="text/css" href="./css/index.css" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Coming+Soon|Handlee|Kalam|Nothing+You+Could+Do|Rock+Salt" rel="stylesheet">
+	
+  </head>
+  
+  <body>
+	
+	<div id="bg">
+	
+	<div>
+	  <div id="upperPanel">
+	    <ul>
+		  <li><a href="#"><img class="diceImage" src="images/d20.jpg"/></a></li>
+	      <li><p id="title">Crawl.JS</p></li>
+		  <li><img class="diceImage" src="images/d20.jpg"/></li>
+		</ul>
+	  </div>
+	  <div id="status">
+        <div id="gameControls">
+		  <ul>
+		    <li><button id="newgame" onClick="newGame()">New Game</button></li>
+		    <li><button id="savegame" onClick="saveGame()">Save Game</button></li>
+		    <li><button id="loadgame" onClick="loadGame()">Load Game</button></li>
+		  </ul>
+		</div>
+	    <span>YOUR STATUS</span><br/><br/>
+		<div id="charControls">
+		<span id="NAME" class="stats">_____</span> the <span id="TYPE" class="stats">_____</span><br/><br/>
+		<span class="stats">Hit Points &nbsp;: </span><span id="HP"></span><br/>
+		<span class="stats">Strength &nbsp;&nbsp;&nbsp;: </span><span id="STR"></span><br/>
+		<span class="stats">Defense &nbsp;&nbsp;&nbsp;&nbsp;: </span><span id="DEF"></span><br/>
+		</div>
+		<div id="equipControls">  
+		  <span>Weapon: </span><span id="WEAPON"></span><br/>
+		  <span>Armor : </span><span id="ARMOR"></span><br/>
+		  <span>Item &nbsp;: </span><span id="ITEM"></span><br/>
+		  <span class="stats">Gold &nbsp;: </span><span id="GOLD"></span><br/>
+		  <span>SCORE : </span><span id="SCORE"></span><br/>
+		</div>
+	  </div>
+	</div>
+	
+	<div id="controls">
+	    <ul id="worldButtons">
+	      <li><span>--- WORLD ---</span></li>
+		  <li><button id="exploreButton" onClick="explore()">Explore</button></li>
+		  <li><button id="talkButton" onClick="talk()">Talk</button></li>
+		  <li><button id="mapButton" onClick="map()">Check Map</button></li>
+        </ul>
+	    <ul id="talkButtons">
+		  <li><span>--- RESPONSE ---</span></li>
+		  <li><button id="talkYes">Yes</button></li>
+		  <li><button id="talkYes">No</button></li>
+		</ul>
+		<ul id="combatButtons">
+	      <li><span>--- COMBAT ---</span></li>
+	      <li><button id="fightButton" onClick="fight()">Fight</button></li>
+		  <li><button id="itemButton" onClick="item()">Use Item</button></li>
+	      <li><button id="runButton" onClick="run()">Run Away</button></li>
+	      <li><button id="healButton" onClick="heal()">Rest/Heal</button></li>
+        </ul>
+		
+	</div>
+	
+	<div id="view">
+	  <p id="gameMessage">View</p>
+	  <ul>
+	    <li id="left">
+	      <span>Hero</span>
+		  <div id="leftImage"></div>
+		  <span id="leftMessage"></span>
+	    </li>
+	    <li id="right">
+		  <span id="monNAME">Encounter</span><br/>
+		  <span id="monHP"></span><br/>
+		  <div id="rightImage"></div>
+		  <span id="rightMessage"></span>
+	    </li>
+	  </ul>
+	</div>
+	
+	<div id="bottomPanel">
+	  <div id="logWindow">Game Log<br/><br/></div>
+	</div>
+	
+	<div id="footer">
+	  <div id="neat">                                                                                              ____________
+									 (`-..________....---''  ____..._.-`
+									  \\`._______.._,.---'''     ,'
+									  ; )`.      __..-'`-.      /
+									 / /     _.-' _,.;;._ `-._,'
+									/ /   ,-' _.-'  //   ``--._``._
+								  ,','_.-' ,-' _.- (( =-    -. `-._`-._____
+								,;.''__..-'   _..--.\\.--'````--.._``-.`-._`.
+				 _          |\,' .-''        ```-'`---'`-...__,._  ``-.`-.`-.`.
+	  _     _.-,'(__)\__)\-'' `     ___  .          `     \      `--._
+	,',)---' /|)          `     `      ``-.   `     /     /     `     `-.
+	\_____--.  '`  `               __..-.  \     . (   < _...-----..._   `.
+	 \_,--..__. \\ .-`.\----'';``,..-.__ \  \      ,`_. `.,-'`--'`---''`.  )
+			   `.\`.\  `_.-..' ,'   _,-..'  /..,-''(, ,' ; ( _______`___..'__
+					   ((,(,__(    ((,(,__,'  ``'-- `'`.(\  `.,..______   SSt
+										  ``--------..._``--._
+	  </div><br/>
+	  <p id="stamp">Travis Houser 2017</p>
+	</div>
+	
+	</div>
+	
+	<script src="./js/crawl.js"></script>
+	
+  </body>
+  
+</html>
